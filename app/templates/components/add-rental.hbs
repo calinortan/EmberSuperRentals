@@ -1,0 +1,9 @@
+<h2 class="add-rental-title">Add a new rental</h2>
+{{input value=newRentalValues.title class="light" placeholder="title" required="true"}}
+{{input value=newRentalValues.owner class="light" placeholder="owner" required="true"}}
+{{input value=newRentalValues.city class="light" placeholder="city" required="true"}}
+{{input value=newRentalValues.type class="light" placeholder="type" required="true"}}
+{{input value=newRentalValues.image class="light" placeholder="image" required="true"}}
+{{input value=newRentalValues.bedrooms class="light" placeholder="bedrooms" type="number" required="true"}}
+{{textarea value=newRentalValues.description class="light add-rental-textarea" placeholder="description" required="true"}}
+<button {{action "handleAddRental"}} class="button save-rental-button">Save</button>

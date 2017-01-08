@@ -1,0 +1,11 @@
+{{#list-filter filter=(action 'filterByCity') as |rentals|}}
+    <ul class="results">
+        {{#each rentals as |rentalUnit|}}
+        <li>{{rental-listing rental=rentalUnit}}</li>
+        {{/each}}
+    </ul>
+{{/list-filter}}
+<div id="add-new-rental-element">
+    {{add-rental onRentalAdd=(action 'addNewRental')}}
+</div>
+{{outlet}}
