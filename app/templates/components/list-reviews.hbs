@@ -1,4 +1,6 @@
-{{#each reviews as |r|}}
-    {{review-listing review=r}}
-{{/each}}
+<ul class="results">
+    {{#each reviews as |r|}}
+        {{review-listing review=r}}
+    {{/each}}
+</ul>
 {{yield}}
